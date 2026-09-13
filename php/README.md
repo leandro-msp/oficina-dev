@@ -1,20 +1,15 @@
-# Curso Completo de PHP + Projetos
+# [![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
 
-## Conteúdo do Repositório
-No capítulo 01 - Fundamentos e Lógica, está presente os conceitos básicos que rege as linguagens de programação. A partir disto, este ambiente de estudo PHP é dedicado ás particularidades e tipos de tratamentos desta linguagem, além de conter um material mais abrangente, será adicionado projetos feitos conforme o avanço das aplicações.
+## Conteúdo da Pasta
+Aqui está presente um resumo do conteúdo aprendido em aulas acadêmicas e também em cursos. Possui pequenos scripts e testes utilizando as particularidades da linguagem e de vez em quando algumas integrações com banco de dados.
 
-* **Variáveis, Constante, Operadores, Estruturas Condicionais e de Loopings:** Quais são os tipos de dados, como são armazenados, e criação de estrutura lógicas.
-* **Funções e Arrays:** Criação de funções, manipulação de strings e arrays (numéricos e associativos).
-* **Web:** Manipulação de formulários (GET/POST), sessões, cookies e validação de dados.
-* **Banco de Dados:** Conexão e operações CRUD utilizando PDO e MySQL.
-* **Orientação a Objetos:** Classes, objetos, herança, encapsulamento e polimorfismo.
-
-
-Para facilitar o desenvolvimento e os testes locais em qualquer máquina sem a necessidade de instalar servidores pesados (como XAMPP ou WAMP), utilizaremos o **Servidor Embutido do PHP (*CLI Server*)**.
+**PARA UM CONTEÚDO MAIS ABRANGENTE:** [ACESSE ESTE REPOSITÓRIO(curso-php-mysql)](https://github.com/leandro-msp/curso-php-mysql). Nele está disponível todo o meu material de aprendizado em desenvolvimento com PHP, integrando banco de dados do tipo relacional(MySQL), POO (Programação Orientada a Objetos) e criação de projetos práticos.
 
 ---
 
 ### Pré-requisito
+
+Para facilitar o desenvolvimento e os testes locais em qualquer máquina sem a necessidade de instalar servidores pesados (como XAMPP ou WAMP), utilizaremos o **Servidor Embutido do PHP (*CLI Server*)**.
 
 * Ter o **PHP (versão 8.0 ou superior)** instalado na máquina e adicionado às Variáveis de Ambiente (`PATH`).
 * MySQL ( para rodar projetos integrados com bancos de dados)
@@ -25,18 +20,18 @@ Para facilitar o desenvolvimento e os testes locais em qualquer máquina sem a n
 1. Clone o repositório (Opção 1 - Repositório Completo): 
 
 ```bash
-git clone https://github.com/leandro-msp/Jornada-da-Programacao
+git clone https://github.com/leandro-msp/oficina-dev
 ```
 
 Caso opte em não baixar **todo o conteúdo do repositório geral(todas as pastas)**, pode clonar apenas a pasta específica (Opção 2 - **somente pasta PHP**)(*RECOMENDADO*):
 
 ```bash
-git clone --filter=blob:none --sparse https://github.com/leandro-msp/Jornada-da-Programacao
+git clone --filter=blob:none --sparse https://github.com/leandro-msp/oficina-dev
 ```
 Entre na pasta do repositório clonado:
 
 ```bash
-cd Jornada-da-Programacao
+cd oficina-dev
 ```
 Define para o Git trazer apenas a pasta desejada:
 
@@ -46,7 +41,7 @@ git sparse-checkout set php
 
 2. Acesse o diretório do projeto: 
 ```bash
-cd Jornada-da-Programacao/php
+cd oficina-dev/php
 ```
 
 #### 3. Iniciando o servidor embutido do PHP:
