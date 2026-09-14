@@ -12,6 +12,8 @@
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-%23FCC624.svg?style=for-the-badge&logo=linux&logoColor=black)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-%23E95420.svg?style=for-the-badge&logo=ubuntu&logoColor=white)
 
 **Sou estudante de TADS**, a princípio focado em Back-End. Neste repositório voltado para os estudos está registrada a compilação organizada do meu processo de aprendizagem. Todo o material relevante que eu desenvolvo através das aulas acadêmicas e cursos realizados em plataformas online, assim como testes e exercícios, serão disponibilizados neste ambiente.
 
@@ -41,7 +43,7 @@ A finalidade deste conjunto é apresentar as etapas do meu desenvolvimento, disp
   > [!NOTE]
   > O material deste tópico é constantemente atualizado conforme a grade dos estudos.
   
-  > **Conteúdo incluso:** Notas de aula, resoluções de problemas e projetos guiados.
+   **Conteúdo incluso:** Notas de aula, resoluções de problemas e projetos guiados.
   
   * **DEV-WEB:** Desenvolvimento para Internet com HTML e CSS3. *(em desenvolvimento)*
   * **Disciplinas_cPython:** Aprendizado de Máquina e Ciência de Dados.
