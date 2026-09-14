@@ -1,16 +1,18 @@
+# Ambiente PHP
 # [![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
 
 ## Conteúdo da Pasta
-Aqui está presente um resumo do conteúdo aprendido em aulas acadêmicas e também em cursos. Possui pequenos scripts e testes utilizando as particularidades da linguagem e de vez em quando algumas integrações com banco de dados.
+Aqui está presente um resumo do conteúdo aprendido em aulas acadêmicas e também em cursos. Possui pequenos scripts e testes utilizando as particularidades da linguagem e de vez em quando algumas integrações básicas com banco de dados.
 
-**PARA UM CONTEÚDO MAIS ABRANGENTE:** [ACESSE ESTE REPOSITÓRIO(curso-php-mysql)](https://github.com/leandro-msp/curso-php-mysql). Nele está disponível todo o meu material de aprendizado em desenvolvimento com PHP, integrando banco de dados do tipo relacional(MySQL), POO (Programação Orientada a Objetos) e criação de projetos práticos.
+**PARA UM CONTEÚDO MAIS ABRANGENTE** tenho um repositório onde registro meu aprendizado completo utilizando ferramentas para o desenvolvimento web, sendo elas, o próprio PHP, integração com banco de dados MySQL, gerenciamento de dependências com o Composer, arquitetura e organização com conceitos da Programação Orientada a Objetos (POO), e criação de projetos práticos, basta **[CLICAR AQUI](https://github.com/leandro-msp/curso-php-mysql).**
 
 ---
 
-### Pré-requisito
+### Testando o ambiente 
 
 Para facilitar o desenvolvimento e os testes locais em qualquer máquina sem a necessidade de instalar servidores pesados (como XAMPP ou WAMP), utilizaremos o **Servidor Embutido do PHP (*CLI Server*)**.
 
+**Requisitos:**
 * Ter o **PHP (versão 8.0 ou superior)** instalado na máquina e adicionado às Variáveis de Ambiente (`PATH`).
 * MySQL ( para rodar projetos integrados com bancos de dados)
 
