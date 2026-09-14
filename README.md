@@ -40,6 +40,7 @@ A finalidade deste conjunto é apresentar as etapas do meu desenvolvimento, disp
 * ### 📚 Material Acadêmico
 
   Todo o conteúdo programático e os exercícios desenvolvidos ao longo das disciplinas acadêmicas estão organizados e centralizados no tópico [📁 academico](github.com/leandro-msp/oficina-dev/tree/main/academico).
+  
   > [!NOTE]
   > O material deste tópico é constantemente atualizado conforme a grade dos estudos.
   
