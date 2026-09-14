@@ -23,19 +23,19 @@ Se você deseja clonar este repositório e executar os projetos localmente sem p
 > acesse o terminal de sua preferência e execute:
 
 ```bash
-git clone https://github.com/leandro-msp/Jornada-da-Programacao
+git clone https://github.com/leandro-msp/oficiva-dev
 ```
 ---
 **OPÇÃO 2 - Clonar somente a pasta com conteúdo python(recomendado):**
 > acesse o terminal de sua preferência e execute:
 
 ```bash
-git clone --filter=blob:none --sparse https://github.com/leandro-msp/Jornada-da-Programacao
+git clone --filter=blob:none --sparse https://github.com/leandro-msp/oficina-dev
 ```
 Entre na pasta do repositório clonado:
 
 ```bash
-cd Jornada-da-Programacao
+cd oficina-dev
 ```
 Define para o Git trazer apenas a pasta desejada:
 
@@ -46,7 +46,7 @@ git sparse-checkout set academico/disciplinas_cPython
 
 **2.Entre na pasta do projeto:**
 ```bash
-cd jornada-da-programacao/academico/disciplinas_cPython
+cd oficina-dev/academico/disciplinas_cPython
 ```
 
 ### 3. Criar e ativar o Ambiente Virtual (.venv)
