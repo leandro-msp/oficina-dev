@@ -23,7 +23,7 @@ Se você deseja clonar este repositório e executar os projetos localmente sem p
 > acesse o terminal de sua preferência e execute:
 
 ```bash
-git clone https://github.com/leandro-msp/oficiva-dev
+git clone https://github.com/leandro-msp/oficina-dev
 ```
 ---
 **OPÇÃO 2 - Clonar somente a pasta com conteúdo python(recomendado):**
