@@ -1,0 +1,32 @@
+Descrição das seguintes funções do PHP utilizadas no tratamento de strings:
+str_contains, str_starts_with, str_ends_with, var_dump
+
+str_contains => 
+
+    É uma função que verifica se há o valor(string) informado dentro da variável apontada, o return sempre será em boolean( true(1) ou false(0))
+    ela requer dois parâmetros, 1 - onde será realizada a busca, 2- o valor a ser procurado.
+    Esta função é case sensitive, caso haja diferença de maiúscula e minúscula nos caracateres, pode resultar em false
+
+        ex.: 
+        
+            $mensagem = "Curso completo PHP" ;
+            $possui = str_contains($mensagem,'Completo');
+
+            o resultado será boolean(false), devido ao case sensitive, a letra 'C' está maiúscula
+             
+        para tratar esse tipo de situação: Utilizar o tratamento de conversão para minúsculo.
+
+        $possui = str_contains(ucwords($mensagem,'Completo'));
+
+str_starts_with =>
+    função que verifica se o conteúdo que está sendo analisado inicia com o valor informado, e retorna valor boolean false ou true
+    parâmetros: Onde será pesquisado e o que será pesquisado
+
+
+str_ends_with =>
+    essa função trabalha da mesma forma que o "starts_with", porém essa verifica se termina com valor informado.
+
+var_dump => é uma função de depuração que exibe o tipo de dado, o valor , e o tamanho
+
+
+
