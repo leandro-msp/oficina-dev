@@ -19,7 +19,9 @@
 
 
 ## Conteúdo do Repositório
-> o conteúdo deste repositório é constamente atualizado conforme a grade dos estudos.
+
+> [!NOTE]
+> O material deste repositório é constantemente atualizado conforme a grade dos estudos.
 
 A finalidade deste conjunto é apresentar as etapas do meu desenvolvimento, disponibilizando todo o material consumido e criado, a fim de apresentar todos os conceitos que estou tendo contato durante minha aprendizagem. Para isso, o processo apresentado irá desde os princípios básicos da programação até a criação de scripts atra´veis de exercícios, testes, e pequenos projetos.
 
@@ -40,9 +42,6 @@ A finalidade deste conjunto é apresentar as etapas do meu desenvolvimento, disp
 * ### 📚 Material Acadêmico
 
   Todo o conteúdo programático e os exercícios desenvolvidos ao longo das disciplinas acadêmicas estão organizados e centralizados no tópico [📁 academico](github.com/leandro-msp/oficina-dev/tree/main/academico).
-  
-  > [!NOTE]
-  > O material deste tópico é constantemente atualizado conforme a grade dos estudos.
   
    **Conteúdo incluso:** Notas de aula, resoluções de problemas e projetos guiados.
   
