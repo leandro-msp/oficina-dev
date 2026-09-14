@@ -61,7 +61,7 @@ A finalidade deste conjunto é apresentar as etapas do meu desenvolvimento, disp
   
   * **Linguagens já trabalhadas**
 
-  * **[🐘​ PHP](github.com/leandro-msp/oficina-dev/tree/main/php)**
+  * **[🐘​ PHP](https://github.com/leandro-msp/oficina-dev/tree/main/php)**
   * **🐍​ Python** *(gerando documentações)*
 
 
