@@ -10,8 +10,7 @@ while(a==0):
 b = float(input("\nDigite o coeficiente B: "))
 c = float(input("\nDigite o coeficiente C: "))
 
-#descobrir o delta (Discriminante)
-
+#descobrir o Delta (Discriminante)
 delta = (b**2)-4*a*c
 
 if (delta<0): 
