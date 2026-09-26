@@ -7,25 +7,42 @@ import random
 print ("::: JOGO DA ADIVINHAÇÃO :::")
 print("Informe um número de 1 a 100, e direi se está abaixo ou acima do número escolhido, até que descubra qual é")
 
-numero_escolhido= random.randint(1,100) # máquina escolhe um número aleatório de 1 a 100, pode aumentar o range, consequentemente isso aumentará o número de tentativas ()
-                                        # Se o jogador for bom, certamente vai utilizar a estratégia da busca binária para descobrir em poucas tentativas :)
-tentativas = 0
-palpite = int(input("\nDiga um número: "))
-tentativas+=1 # a partir do momento que o usuário da o primeiro número, já é uma tentativa
-while palpite != numero_escolhido: # início do laço, se o número for diferente do escolhido, começa a verificação se é menor ou maior que num secreto
-    if palpite < numero_escolhido:
-        print("Muito baixo, tente um número maior!") # da a dica se está a cima ou abaixo
-        palpite = int(input("\nDiga um número: "))
-        tentativas +=1 # usuario errou. Logo o programa solicita novo palpite e soma mais uma tentativa
+jogar_novamente = "s" # variável ja começa valendo sim para  que o game cai dentro do While
+melhor_pontuacao = None # a melhor pontuacao deve ser armazenadada fora do looping para não serem apagadas 
 
-    # ocorre mesmo processo do bloco anterior, só muda a verificação
+# Início do jogo 
+while (jogar_novamente=="s"):
+    numero_escolhido= random.randint(1,100) # máquina escolhe um número aleatório de 1 a 100, pode aumentar o range, consequentemente isso aumentará o número de tentativas ()
+                                            # Se o jogador for bom, certamente vai utilizar a estratégia da busca binária para descobrir em poucas tentativas :)
+    tentativas = 0
+    palpite = int(input("\nDiga um número: "))
+    tentativas+=1 # a partir do momento que o usuário da o primeiro número, já é uma tentativa
+    while palpite != numero_escolhido: # início do laço, se o número for diferente do escolhido, começa a verificação se é menor ou maior que num secreto
+        if palpite < numero_escolhido:
+            print("Muito baixo, tente um número maior!") # da a dica se está a cima ou abaixo
+            palpite = int(input("\nDiga um número: "))
+            tentativas +=1 # usuario errou. Logo o programa solicita novo palpite e soma mais uma tentativa
+
+        # ocorre mesmo processo do bloco anterior, só muda a verificação
+        else:
+            print("Muito alto, tente um número menor!")
+            palpite = int(input("\nDiga um número: "))
+            tentativas +=1 
+    #a partir do momento que o palpite se torna igual ao número escolhe, o programa cai fora do laço, ou seja o usuário acertou, e exibe a mensagem
+    print(f"Parabéns, você acertou, eu escolhi exatamente o número {numero_escolhido}\n")
+    print(f"Você acertou em {tentativas} tentativas")
+
+    # sistema de armazenar o record de menor tentativas
+    if (melhor_pontuacao is None or tentativas < melhor_pontuacao): # pelo fato da variavel começar com valor "sem valor", na primeira partida o placar será adicionado a melhor pontução
+        melhor_pontuacao = tentativas                               # nas demais partidas o if cairá na condição de verificar se qtdd de tentivas atual foi menor que a melhor pontuação a ja feita,
+                                                                    # caso seja a melhor pontuação receberá o novo valor de tentativas 
+        print (f"Novo Record!! Sua melhor pontuação agora é {melhor_pontuacao} tentativas" )
     else:
-        print("Muito alto, tente um número menor!")
-        palpite = int(input("\nDiga um número: "))
-        tentativas +=1 
-#a partir do momento que o palpite se torna igual ao número escolhe, o programa cai fora do laço, ou seja o usuário acertou, e exibe a mensagem
-print(f"Parabéns, você acertou, eu escolhi exatamente o número {numero_escolhido}\n")
-print(f"Você acertou em {tentativas} tentativas")
+        print(f"Seu record atual continua sendo de {melhor_pontuacao} tentativas")
+
+    #verificar se quer jogar novamente
+    jogar_novamente = input("Deseja jogar novamente? Digite 's', caso contrário digite qualquer outro valor: \n").lower() # caso user digite sim o jogo inicia o loop novamente
+print("Jogo Finalizado!")
 
 
 #CORREÇÃO / ADAPTAÇÃO
