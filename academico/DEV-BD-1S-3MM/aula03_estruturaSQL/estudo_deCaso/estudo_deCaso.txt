@@ -1,0 +1,22 @@
+Como armazenar informações dos estudantes abaixo:
+
+
+RA	        Nome	              Nota
+123456789	José Bedeu	          9.5
+123456987	Belarmina Amadeu	  8.0
+
+
+Ajustes na tabela
+
+id_estudante	RA	        Nome	            Nota
+1	            123456789	José Bedeu	        9.5
+2	            123456987	Belarmina Amadeu	8.0
+
+Tabela com dados para ciração:
+Tabela: estudantes
+
+Nome do campo	Tipo de dados	Tamanho	    Restrição
+id_aluno	    int		                    primary key
+ra	            texto	        10	        not null unique
+nome	        varchar	        100	        not null
+nota	        number	        3,1	
