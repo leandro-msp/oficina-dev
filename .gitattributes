@@ -1,2 +1,4 @@
 *.php linguist-language=PHP
 *.php-version linguist-language=PHP
+
+*.sql linguist-detectable=true
