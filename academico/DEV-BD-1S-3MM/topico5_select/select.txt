@@ -1,0 +1,281 @@
+VARIAÇÇÕES DO COMANDO SELECT
+
+
+INSTRUÇÕES DE CONSULTA
+
+    Instruções de Consulta 
+        recuperam linhas armazenadas nas tabelas de uma base de dados: 
+            SELECT
+
+SELECT - Recupera linhas nas tabelas
+Select é a instrução que faz parte do subconjunto de instrução de consulta.
+Utilizado para selecionar ou criar relatórios a partir de uma tabela com dados inseridos
+Para executar o comando SELECT, a tabela tem que estar criada e os dados devem estar inseridos na tabela.
+
+    SINTAXE:
+
+        select campos/colunas 
+        from nome_da_tabela 
+        where condição(ões)
+        order by campo(s)
+
+        ORDER BY:
+            
+            asc, desc
+            obs1.: apenas o operador descendente deve ser digitado.
+            obs2.: não é necessária a coluna utilizada no order by estar no select
+
+                exemplo:
+
+                    select categoria from produto order by categoria;
+                    ou
+                    select categoria from produto order by categoria desc;
+
+                    exemplo com tabela:
+                        select nome,categoria
+                        from produto
+                        order by nome desc;
+        
+        ALIAS - APELIDO:
+        Em SQL, um "alias" é u  nome alternativo(apelido) que vc pode atribuir a uma tabela ou a uma coluna em uma consulta
+        os aliases são usado principalmente para melhorar a legibilidade de consultas complexas e para evitar ambiguidades qnd duas ou mais
+        tabelas têm colunas com mesmo nome.
+        os aliases são definidos usando a cláusula AS ou simplesmente colocoando um espaço entre o nome original e o alias 
+
+            ALIAS PARA TABELAS:
+
+                select coluna1, coluna2
+                from nome_da_tabela as alias_da_tabela
+                where condição;
+
+                ou
+
+                select coluna1, coluna2
+                from nome_da_tabela alias_da_tabela
+                where condição;
+        
+                    exemplo:
+
+                        select p.nome, p.categoria
+                        from produto as p;
+
+            ALIAS PARA COLUNAS
+            Pode-se atribuir uma laias a uma coluna em uma consulta para renomeá-la temporariamente na saída da constula.
+            Por exemplo: qnd se deseja tornar o nome da coluna mais descritivo ou qnd deseja evitar ambiguidades em consultas complexas
+
+                    select coluna1 as apelido, coluna2 as "apelido complexo"
+                    from nome_da_tabela
+                    where condição;
+
+                        exemplo:
+
+                            select nome as Produto, preco as "Preço do Produto!
+                            from produto;
+
+                            select nome as Produto, preco as "Valor de venda", categoria as Categorias
+                            from produto
+                            order by preco;
+
+        DISTINCT
+        A cláusula DISTINCT em SQL é usada pra remover linhas duplicadas de um conjunto de resultado e uma consulta
+        Significa que, ao usar DISTINCT, você obtém uma lista de valores únicos nas colunas especificadas na consulta.
+        a cláusula DISTINCT é útil qnd vc deseja eliminar registros duplicados em um tabela ou obter uma lista única de valores em uma coluna específica
+
+            Sintaxe:
+
+                select distinct coluna1,coluna2
+                from tabela
+                where condição;
+
+                exemplo:
+
+                    Selecione os valores não repetidos da coluna categoria da tabela produto, ordenado por categoria:
+
+                        select distinct categoria
+                        from produto
+                        order by categoria;
+
+                    Selecione os valores não repetidos das colunas categoria e estoque, 
+                    para quantidades de estoque contendo mais do que 15 peças, ordenado por estoque
+
+                        select distinct categoria,estoque 
+                        from produto
+                        where estoque > 15
+                        order by estoque;
+
+        OPERADORES:
+            Instruções ou simbolos que permitem executar operaçoes aritiméticas, lógicas, de comparação e manipulação de dados dentro do comandos SQL.
+            Operadores são dividos em:
+                Aritiméticos
+                Relacionais(comparação)
+                Lógicos
+                Between/ not between
+                In / Not in
+                Like/ not Like
+
+
+                    Aritiméticos
+                    Operadores utilizados para campos numéricos e operações matemáticas:
+                        (+,_,*,/,% ou mod)
+
+                    exemplos:
+
+                        Selecionar os campos nome, preco, preco + 10, categoria da tabela produto, ordenado por preço:
+                            select nome, preco, preco+10, categoria 
+                            from produto;
+            
+                        Selecione os campos nome com alias Produto, preco com alias Preço original, 
+                        preco com aumento de 10% e alias Aumento 10% e preco com desconto de 10% e alias Desconto 10%:
+
+                            select 
+                            nome as Produto, preco as "Preço original", 
+                            preco*1.1 as "Aumento 10%", 
+                            preco*0.9 as "Desconto 10%"
+                            from produto;
+
+                    Operadores Relacionais e  Lógicos
+                        Relacionais:
+                        = igual
+                        <> ou != diferente de
+                        > maior que
+                        > menor que
+                        <= menor ou igual
+                        >= maior ou igual
+                        is null -  valores nulos
+                        is not null - valores diferentes de nulo
+
+                            exemplos:
+                                Selecione o nome, preco, categoria e dt_criacao dos produtos cadastrados no dia 29/10/2023.
+                                    
+                                    select 
+                                    nome, preco, categoria, dt_criacao 
+                                    from produto 
+                                    where 
+                                    dt_criacao='2023-10-29';
+
+                                Selecione o nome, categoria ,preco e dt_criacao dos produtos com datas de criação após o dia 28/10/2023, ordenado pelo preco decrescente.
+                                    
+                                    select nome, preco, categoria, dt_criacao 
+                                    from produto 
+                                    where DT_CRIACAO>'2023-10-28'
+                                    order by preco desc;
+
+                                Selecione todos os produtos da tabela produto que não tenham data de criação cadastradas.
+
+                                    SELECT * FROM produto 
+                                    WHERE dt_criacao is null;
+
+                                Selecione o nome, categoria, preco e dt_criacao dos produtos com datas de criação no dia 
+                                29/10/2023 ou produtos com categoria ssd
+
+                                    select nome, categoria, preco, dt_criacao 
+                                    from produto 
+                                    where dt_criacao ='2023-10-29' or categoria ='ssd';
+
+                                Selecione todos os produtos cadastrados no mês de outubro de 2023.
+
+                                    select *
+                                    from produto 
+                                    where dt_criacao >='2023-10-01'  and dt_criacao<='2023-10-31';
+
+
+                    OPERADOR Between/ NOT Between
+                    Operador utilizado para verificar faixa de valores, entre dois valores, incluindo os valores da faixa
+
+                        sintaxe:
+
+                            where campo between valor1 and valor2;
+
+                            ou
+
+                            where campo not between valor1 and valor2;
+
+                                exemplos:   
+
+                                Selecione todos os produtos que tenham id_prod entre 3 e 7
+
+                                    select * from produto
+                                    where id_prod between 3 and 7;
+                                
+                                Selecione todos os produtos que tenham id_prod fora da faixa entre 3 e 7.
+
+                                    select * from produto
+                                    where id_prod not between 3 and 7;
+                                
+                    
+                    OPERADOR IN/ NOT IN
+                    operador utilizado para verificar valores dentro de operações
+
+                        sintaxe:
+
+                            where campo in (valor1,valor2);
+
+                            ou
+
+                            where campo not in (valor1,valor2);
+
+                            exemplos:
+
+                                Selecione todos os produtos que tenham categoria ssd, fone
+
+                                    SELECT *
+                                    FROM produto
+                                    WHERE categoria in ('fone','ssd');
+
+                                Selecione todos os produtos que não tenham categoria ssd, mouse
+
+                                    SELECT *
+                                    FROM produto
+                                    WHERE categoria not in ('ssd','mouse');
+                    
+                    OPERADOR LIKE / NOT LIKE
+                    Usado para buscar padrões em uma coluna de texto (por exemplo, strings) de uma tabela
+                    permite realizar buscas de texto qeu correspondem a um padrão específico em vez de procurar uma correspondencia exata
+                    cláusula LIKE é geralmente usada em combinação com curingas para realizar buscas mais flexíveis
+
+                        sintaxe:
+
+                            where campo like padrão
+
+                            ou
+
+                            where campo not like padrão;
+
+
+                        CORINGA %
+                        Usado para verificar string com qualquer quantidade de caracateres
+
+                            exemplos:
+
+                                Selecione todos os produtos que comecem pela letra M
+
+                                    select * from produto
+                                    where nome like 'M%'
+                                    
+                                Selecione todos os produtos que tenha categoria com a última letra E
+
+                                    select * from produto
+                                    where categoria like '%e'  
+
+                        CORINGA _
+                        Usado para verificar string, cada _ representa um único caracatere
+
+                            exemplos:
+
+                                Selecione todos os produtos onde a categoria tenha valor com 3 letras
+
+                                    select * from PRODUTO
+                                    where categoria like '___'
+                            
+                                Selecione todos os produtos que tenha a segunda letra E no nome
+
+                                    select * from PRODUTO
+                                    where nome like '_e%'   
+
+
+                    
+                    
+
+                    
+                                
+                
