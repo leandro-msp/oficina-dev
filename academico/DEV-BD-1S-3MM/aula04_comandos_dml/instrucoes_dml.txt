@@ -1,0 +1,128 @@
+Tabela exemplo para a aula : "Produto"
+
+uma tabela simples para praticar comandos de criação e manipulação
+
+id_produto: chave primária sequencial automática
+nome: nome do produto, até 100 caracteres, obrigatório,
+valor: preço, até 7 dígitos e 2 decimais, deve ser positivo
+obs- observações, opciional, até 200 caracteres
+
+1- Criação da tabela
+
+2- Instruções DML 
+    Insert : insere novas linhas
+    Update: atualiza dados
+    Delete: apga/remove os dados
+
+3 - Comando INSERT - Inserção de dados
+
+    SINTAXE 1:
+
+    insert indo nome_tabela (coluna1,coluna2,colunaN) values (valor1,valor2,valorN);
+        dessa forma os campos não definiidos ficarão com valor NULO(se permitido)
+
+    exemplo com tabela:
+        insert into produto (id_produto,nome,valor) values (100,'Mouse',30.5)
+
+
+    SINTAXE 2:
+
+    Inserção Omitindo Colunas
+
+    Insert Into nome_tabela values (valor1,valo2,valorN);
+
+    neste método os valores devem seguir a ordem exata da definição da tabela. Deve incluir valores para todas as colunas!
+
+    exemplo com tabela:
+        insert into produto values (101,'Monitor',150.0)
+
+4 - Colocando UPDATE - Atualização de dados
+
+    Sintaxe e Princípios:
+
+        update nome_tabela 
+        set coluna = novo_valor, coluna = novo_valor 
+        where condição;
+
+    clásula SET: especifica os campos e nvoos valores.
+    clásula WHERE: especifica quais linhas alterar.
+    SEM clásula WHERE: altera todas as linhas!
+    Atualização com própria coluuna: 
+    set valor = valor *1.1.
+
+    condições WHERE válidas: Inclui Subconsutlas.
+    Avaliação do WHERE: feita ANTES das atualizações
+
+    EXEMPLOS PRÁTICOS:
+
+    Atualização especifica(where):
+
+        update produto
+        set nome = 'Mouse Logitech'
+        where id_produto = 100;
+
+    Atualização Múltiplas Colunas(where):
+        
+        update produto
+        set valor = 75.3 , obs = 'Teclado com Fio' 
+        where id_produto = 101;
+
+    Exemplos de tabela toda (sem where)
+
+        update produto set valor = valor *1.1; 
+        (aumento de 10%)
+
+        update produto
+        set valor = 150;
+        (todos os valores ficam com 150)
+
+
+5 - Comando DELETE - exclusão de dados
+removendo dados de uma tabela com seguraça
+
+    Sintaxe e condições
+    
+        delete from nome_tabela
+        where condição;
+
+    atenção : caso a clásula WHERE seja omitida, TODAS as linhas da tabela serão eliminadas.
+
+    com Where especifica quais linhas linhas serão apgadas
+
+
+    Exemplos Práticos:
+
+        exclusão especifica;
+
+        delete from produto 
+        where id_produto = 100;
+
+        select * from produto;
+
+
+        exclusão total (sem where)
+
+        delete from produto;
+        (apaga todos os dados da tablea produto)
+
+        select * from produto;
+
+6 - Comando TRUNCATE = Limepeza rápida de talbeas
+uma mandeira mais rápida e eficiente de apagar todos os dados sme remover a estrutura da tabela
+
+    Sintaxe e Princípios:
+
+    TRUNCATE nome_tabela
+
+    rápido e eficiente: mais rapido que delete sem where
+    sem clásula where: não aceita filtros de linhas
+    mantém a estrutura: mantem a tabela, apenas zera os dados
+    reseta auto_increment: freqyetenebte reseta os valores autoincrementais
+
+    EXEMPLOS PRÁTICOS:
+
+    Truncate produto;
+
+    select * from produto;
+
+
