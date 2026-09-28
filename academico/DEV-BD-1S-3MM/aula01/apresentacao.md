@@ -87,4 +87,19 @@ Construir relatórios robustos exige um domínio dos filtros e operadores do SQL
 
 ## Relatórios Avançados: Subqueries e Joins
 Para dados mais complexos e insights mais profundos, utilizamos subqueries e operações de JOIN.
+
+* **Subqueries (Subconsultas):** Uma consulta aninhada dentro de outra. Pode retornar um único valor, uma lista de valores ou uma tabela, sendo usada em **WHERE**, **FROM** ou **SELECT.**
+> Exemplo:
+
+```SQL
+ SELECT Nome FROM Produtos WHERE Preco > (SELECT AVG(Preco) FROM Produtos);
+```
+Úteis para cenários onde a condição de filtro ou o dado a ser exibido depende de outro resultado de consulta.
+
+* **Consultas com Múltiplas Tabelas (JOINs):** Combinam linhas de duas ou mais tabelas baseadas em uma coluna relacionada entre elas.
+  * **INNER JOIN:** Retorna linhas quando há correspondência em ambas as tabelas.
+  * **LEFT JOIN:** Retorna todas as linhas da tabela esquerda e as correspondentes da direita.
+  * **RIGHT JOIN:** Retorna todas as linhas da tabela direita e as correspondentes da esquerda.
+  * **FULL OUTER JOIN:** Retorna todas as linhas quando há uma correspondência em uma das tabelas.
+
     
