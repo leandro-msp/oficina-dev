@@ -67,3 +67,18 @@ print(type(z))
 print(float(k))
 print(int(i))
 print(complex(k))
+
+#NÚMEROS ALEATÓRIOS
+'''
+Embora Python não tenha uma função random() para gerar um número aleatório, existe um módulo construído em Python chamado random que nos permite criar números aleatórios:
+'''
+
+import random
+
+print (random.randrange(1,10)) #função gera números entre 1 e 9
+
+numero_aleatorio = random.randint(1,50) # gera um número inteiro entre 1 e 10
+
+print(numero_aleatorio)
+
+
