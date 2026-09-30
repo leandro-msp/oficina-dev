@@ -1,0 +1,69 @@
+# existem 3 tipos núermos em Python
+#   int -> inteiro
+#   float -> flutuante (número com casas decimais)    
+#   complex
+
+'''Td em Python é um objeto, sendo assim, tipos de dados são clases e variáveis são instâncias(objetos) dessas classes'''
+
+a = 10 # tipo int
+b = 10.5  # float
+c = 5j # complex
+
+print(type(a))
+print(type(b))
+print(type(c))
+
+# INT 
+'''São números inteiros positivos, negativos, que nn apresentam casas decimais, seu tamanhp é limitado apenas pela capacidade de memória disponível'''
+
+e = 5
+f = 1239873487812
+g = -8
+
+print('Inteiros: ')
+print(type(e))
+print(type(f))
+print(type(g))
+
+#FLOAT  
+'''são números de ponto flutuante, são positivos ou negativos que podem conter uma ou mais casas decimais'''
+
+h = 10.2
+i = 2.0
+j = -15.23
+
+print('Float: ')
+print(type(h))
+print(type(i))
+print(type(j))
+
+#Complex
+
+'''Número complexos são escritos com j representando a parte imaginária.
+Eles podem se escritos complex(3,4) ou 3,4j. Um numero complexo 'c' é armzaenado internamente usando coordenadas Cartesianas ou Retangulares'''
+
+a = 2+4j
+b = -3j
+c = complex(3,4)
+
+print('Complex: ')
+print(type(a))
+print(type(b))
+print(type(c))
+
+
+# CONVERSÃO DE TIPOS NUMÉRICOS
+print("\n")
+k = 5
+i = 8.6
+z = 5j
+
+
+print ("Conversão de Números")
+print(type(k))
+print(type(i))
+print(type(z))
+
+print(float(k))
+print(int(i))
+print(complex(k))
