@@ -64,10 +64,3 @@ nome = "Ayrton Senna"
 print(nome[3:10]) # ton Sen
 print(nome[::-1]) # inverte a string -> anneS ontryA
 
-
-
-s = "Rafael"
-print(s[0]) # Imprime a primeira letra do nome
-print(s[-6]) # Imprime a primeira letra do nome
-print(s[5]) # Imprime a última letra do nome
-print(s[-1]) # Imprime a última letra do nome
