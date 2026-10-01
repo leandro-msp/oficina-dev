@@ -37,6 +37,17 @@ print(type(h))
 print(type(i))
 print(type(j))
 
+'''
+Podemos acrescentar o caracter e ou E seguido por um número inteiro positivo ou negativo para especificar a notação científica.
+'''
+# notação científica
+e = 35e4
+print(type(e)) # <class 'float'>
+print(e) # 350000.0
+E = 3.8e-2
+print(type(E)) # <class 'float'>
+print(E) # 0.038
+
 #Complex
 
 '''Número complexos são escritos com j representando a parte imaginária.
