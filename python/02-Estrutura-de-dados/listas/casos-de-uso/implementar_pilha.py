@@ -1,3 +1,5 @@
+# Pilha - > Último entra e o primeiro sai(topo)
+
 pilha_pratos = [] # pilha vazia
 
 #empilhando pratos
