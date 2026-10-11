@@ -13,7 +13,7 @@ print(func, departamento, linguagem, status)
 # capturando tudo que está no meio e "joga fora" 
 
 funcionario, *_, status = ["João", 36, "São Paulo", "Tec.Redes", "N/D", "Ativo"] # João Ativo
-'aterisco (*), captura vários valors de uma só vez que não nos interssam, sempre precisar colocar um underline(_) para cada um deles.'
+'asterisco (*), captura vários valors de uma só vez que não nos interssam, sempre precisar colocar um underline(_) para cada um deles.'
 print(funcionario, status)
 
 # ou 
