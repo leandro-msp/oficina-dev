@@ -1,0 +1,101 @@
+ID_Pedido,Data,Produto,Categoria,Quantidade,Preço_Unitário,Total_Venda,Região
+1,2026-01-01,Fone de Ouvido Bluetooth,Áudio,2,45.0,90.0,Sudeste
+2,2026-01-02,Mouse Sem Fio,Periféricos,1,25.5,25.5,Sul
+3,2026-01-02,Teclado Mecânico,Periféricos,1,89.9,89.9,Nordeste
+4,2026-01-03,Monitor 24 Polegadas,Monitores,1,199.0,199.0,Centro-Oeste
+5,2026-01-04,Smartphone 128GB,Celulares,1,499.0,499.0,Sudeste
+6,2026-01-05,Carregador Rápido,Acessórios,3,15.0,45.0,Norte
+7,2026-01-05,Cabo HDMI 2m,Acessórios,5,8.5,42.5,Sudeste
+8,2026-01-06,Notebook Ryzen 5,Computadores,1,749.0,749.0,Sul
+9,2026-01-07,Suporte para Notebook,Acessórios,2,22.0,44.0,Nordeste
+10,2026-01-08,Caixa de Som Wi-Fi,Áudio,1,120.0,120.0,Sudeste
+11,2026-01-09,Placa de Vídeo RTX,Componentes,1,399.0,399.0,Centro-Oeste
+12,2026-01-10,SSD 1TB NVMe,Armazenamento,2,85.0,170.0,Sul
+13,2026-01-10,Webcam Full HD,Periféricos,1,45.0,45.0,Norte
+14,2026-01-11,Roteador Wi-Fi 6,Redes,1,79.9,79.9,Sudeste
+15,2026-01-12,Smartwatch Fitness,Celulares,2,110.0,220.0,Nordeste
+16,2026-01-13,Pen Drive 64GB,Armazenamento,4,12.0,48.0,Sul
+17,2026-01-14,Hub USB-C,Acessórios,1,29.9,29.9,Sudeste
+18,2026-01-15,Microfone Condensador,Áudio,1,65.0,65.0,Centro-Oeste
+19,2026-01-15,Cadeira Gamer,Móveis,1,250.0,250.0,Nordeste
+20,2026-01-16,Memory Card 128GB,Armazenamento,3,18.0,54.0,Norte
+21,2026-01-17,Fone de Ouvido Bluetooth,Áudio,1,45.0,45.0,Sudeste
+22,2026-01-18,Mouse Sem Fio,Periféricos,2,25.5,51.0,Sul
+23,2026-01-19,Teclado Mecânico,Periféricos,1,89.9,89.9,Centro-Oeste
+24,2026-01-20,Monitor 24 Polegadas,Monitores,2,199.0,398.0,Sudeste
+25,2026-01-21,Smartphone 128GB,Celulares,1,499.0,499.0,Nordeste
+26,2026-01-22,Carregador Rápido,Acessórios,2,15.0,30.0,Sul
+27,2026-01-22,Cabo HDMI 2m,Acessórios,4,8.5,34.0,Norte
+28,2026-01-23,Notebook Ryzen 5,Computadores,1,749.0,749.0,Sudeste
+29,2026-01-24,Suporte para Notebook,Acessórios,1,22.0,22.0,Centro-Oeste
+30,2026-01-25,Caixa de Som Wi-Fi,Áudio,2,120.0,240.0,Sul
+31,2026-01-26,Placa de Vídeo RTX,Componentes,1,399.0,399.0,Nordeste
+32,2026-01-27,SSD 1TB NVMe,Armazenamento,3,85.0,255.0,Sudeste
+33,2026-01-27,Webcam Full HD,Periféricos,1,45.0,45.0,Sul
+34,2026-01-28,Roteador Wi-Fi 6,Redes,2,79.9,159.8,Norte
+35,2026-01-29,Smartwatch Fitness,Celulares,1,110.0,110.0,Centro-Oeste
+36,2026-01-30,Pen Drive 64GB,Armazenamento,5,12.0,60.0,Sudeste
+37,2026-01-31,Hub USB-C,Acessórios,2,29.9,59.8,Nordeste
+38,2026-02-01,Microfone Condensador,Áudio,1,65.0,65.0,Sul
+39,2026-02-02,Cadeira Gamer,Móveis,1,250.0,250.0,Sudeste
+40,2026-02-03,Memory Card 128GB,Armazenamento,2,18.0,36.0,Centro-Oeste
+41,2026-02-04,Fone de Ouvido Bluetooth,Áudio,3,45.0,135.0,Norte
+42,2026-02-05,Mouse Sem Fio,Periféricos,1,25.5,25.5,Nordeste
+43,2026-02-05,Teclado Mecânico,Periféricos,1,89.9,89.9,Sudeste
+44,2026-02-06,Monitor 24 Polegadas,Monitores,1,199.0,199.0,Sul
+45,2026-02-07,Smartphone 128GB,Celulares,1,499.0,499.0,Centro-Oeste
+46,2026-02-08,Carregador Rápido,Acessórios,4,15.0,60.0,Sudeste
+47,2026-02-09,Cabo HDMI 2m,Acessórios,3,8.5,25.5,Nordeste
+48,2026-02-10,Notebook Ryzen 5,Computadores,1,749.0,749.0,Sul
+49,2026-02-11,Suporte para Notebook,Acessórios,2,22.0,44.0,Norte
+50,2026-02-12,Caixa de Som Wi-Fi,Áudio,1,120.0,120.0,Sudeste
+51,2026-02-12,Placa de Vídeo RTX,Componentes,1,399.0,399.0,Centro-Oeste
+52,2026-02-13,SSD 1TB NVMe,Armazenamento,2,85.0,170.0,Nordeste
+53,2026-02-14,Webcam Full HD,Periféricos,1,45.0,45.0,Sul
+54,2026-02-15,Roteador Wi-Fi 6,Redes,1,79.9,79.9,Sudeste
+55,2026-02-16,Smartwatch Fitness,Celulares,2,110.0,220.0,Norte
+56,2026-02-17,Pen Drive 64GB,Armazenamento,10,12.0,120.0,Centro-Oeste
+57,2026-02-18,Hub USB-C,Acessórios,1,29.9,29.9,Nordeste
+58,2026-02-19,Microfone Condensador,Áudio,2,65.0,130.0,Sudeste
+59,2026-02-20,Cadeira Gamer,Móveis,1,250.0,250.0,Sul
+60,2026-02-20,Memory Card 128GB,Armazenamento,4,18.0,72.0,Sudeste
+61,2026-02-21,Fone de Ouvido Bluetooth,Áudio,1,45.0,45.0,Centro-Oeste
+62,2026-02-22,Mouse Sem Fio,Periféricos,3,25.5,76.5,Norte
+63,2026-02-23,Teclado Mecânico,Periféricos,1,89.9,89.9,Nordeste
+64,2026-02-24,Monitor 24 Polegadas,Monitores,1,199.0,199.0,Sul
+65,2026-02-25,Smartphone 128GB,Celulares,1,499.0,499.0,Sudeste
+66,2026-02-26,Carregador Rápido,Acessórios,2,15.0,30.0,Centro-Oeste
+67,2026-02-27,Cabo HDMI 2m,Acessórios,6,8.5,51.0,Nordeste
+68,2026-02-28,Notebook Ryzen 5,Computadores,1,749.0,749.0,Sul
+69,2026-03-01,Suporte para Notebook,Acessórios,1,22.0,22.0,Sudeste
+70,2026-03-02,Caixa de Som Wi-Fi,Áudio,1,120.0,120.0,Norte
+71,2026-03-03,Placa de Vídeo RTX,Componentes,1,399.0,399.0,Sudeste
+72,2026-03-04,SSD 1TB NVMe,Armazenamento,2,85.0,170.0,Centro-Oeste
+73,2026-03-05,Webcam Full HD,Periféricos,2,45.0,90.0,Nordeste
+74,2026-03-05,Roteador Wi-Fi 6,Redes,1,79.9,79.9,Sul
+75,2026-03-06,Smartwatch Fitness,Celulares,1,110.0,110.0,Sudeste
+76,2026-03-07,Pen Drive 64GB,Armazenamento,5,12.0,60.0,Norte
+77,2026-03-08,Hub USB-C,Acessórios,3,29.9,89.7,Centro-Oeste
+78,2026-03-09,Microfone Condensador,Áudio,1,65.0,65.0,Nordeste
+79,2026-03-10,Cadeira Gamer,Móveis,1,250.0,250.0,Sul
+80,2026-03-11,Memory Card 128GB,Armazenamento,2,18.0,36.0,Sudeste
+81,2026-03-12,Fone de Ouvido Bluetooth,Áudio,2,45.0,90.0,Sudeste
+82,2026-03-13,Mouse Sem Fio,Periféricos,2,25.5,51.0,Centro-Oeste
+83,2026-03-14,Teclado Mecânico,Periféricos,1,89.9,89.9,Norte
+84,2026-03-15,Monitor 24 Polegadas,Monitores,1,199.0,199.0,Nordeste
+85,2026-03-16,Smartphone 128GB,Celulares,1,499.0,499.0,Sul
+86,2026-03-17,Carregador Rápido,Acessórios,3,15.0,45.0,Sudeste
+87,2026-03-18,Cabo HDMI 2m,Acessórios,4,8.5,34.0,Centro-Oeste
+88,2026-03-19,Notebook Ryzen 5,Computadores,1,749.0,749.0,Nordeste
+89,2026-03-20,Suporte para Notebook,Acessórios,2,22.0,44.0,Sul
+90,2026-03-20,Caixa de Som Wi-Fi,Áudio,1,120.0,120.0,Sudeste
+91,2026-03-21,Placa de Vídeo RTX,Componentes,1,399.0,399.0,Norte
+92,2026-03-22,SSD 1TB NVMe,Armazenamento,4,85.0,340.0,Sudeste
+93,2026-03-23,Webcam Full HD,Periféricos,1,45.0,45.0,Centro-Oeste
+94,2026-03-24,Roteador Wi-Fi 6,Redes,1,79.9,79.9,Nordeste
+95,2026-03-25,Smartwatch Fitness,Celulares,3,110.0,330.0,Sul
+96,2026-03-26,Pen Drive 64GB,Armazenamento,6,12.0,72.0,Sudeste
+97,2026-03-27,Hub USB-C,Acessórios,2,29.9,59.8,Norte
+98,2026-03-28,Microfone Condensador,Áudio,1,65.0,65.0,Centro-Oeste
+99,2026-03-29,Cadeira Gamer,Móveis,1,250.0,250.0,Nordeste
+100,2026-03-30,Memory Card 128GB,Armazenamento,5,18.0,90.0,Sul

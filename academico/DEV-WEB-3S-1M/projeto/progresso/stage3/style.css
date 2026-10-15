@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(17, 10, 114);
+}
+.titulo1 {
+    color: rgb(11, 177, 243);
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 300%;
+    text-decoration: underline;
+    font-family: sans-serif;
+}
+
+.subtitulo{
+    color:rgb(212, 185, 7);
+    text-align: center;
+    background-color: rgb(28, 34, 58);
+    font-weight: bold;
+    font-size: 150%;
+}
+.paragrafo1 {
+    color: rgb(189, 248, 248);
+    font-size: 150%;
+    font-family: sans-serif;
+}
+
+#descricao{
+    color:mintcream;
+    text-align: center;
+}
+
+.negrito{
+    font-weight: bold;
+    color: rgb(78, 205, 255);
+    font-family: sans-serif;
+    font-size: 200%;
+}

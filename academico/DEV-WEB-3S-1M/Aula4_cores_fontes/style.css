@@ -1,0 +1,53 @@
+h1 {
+    color:rgb(121, 220, 245);
+    font-family: serif;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+    background-color: indigo;
+} 
+h2{
+    background-color: rgb(121, 220, 245);
+    color: rgb(98, 0, 255);
+    font-family: sans-serif;
+    text-align: center;
+    font-variant: small-caps;
+}
+p{
+    font-size: 20px;
+    color:aliceblue;
+    text-align: left;
+}
+body{
+    font-family: "Arial","Helvetica", sans-serif;
+    background-color: blueviolet;
+}
+
+.fonte1 {
+    font-style: italic;
+    color:aliceblue
+}
+.fonte2{
+    color: yellow;
+    text-transform: uppercase;
+    letter-spacing: 20%;
+}
+
+.fonte3{
+    color: yellow;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 30%;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+.negrito{
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.texto{
+    color:aliceblue;
+}

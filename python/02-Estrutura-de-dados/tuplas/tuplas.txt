@@ -1,0 +1,8 @@
+O que é uma tupla em Python:
+
+Uma tupla é uma sequência de valores separados por vírgula, normalmente entre parênteses. Ela tem três características:
+     
+    Ordenada: os itens mantêm a posição em que foram coloados, e vc acessa cada um pelo índice.
+    Imutável: depois de criada, não é possível adicionar, remover ou substituir itens.
+    Heterogênea e com Repetição: aceita tipos diferentes e valores duplicados.
+

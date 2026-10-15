@@ -1,0 +1,76 @@
+Alter Table
+    Para alterar tabelas são utiliados os comandos DDL do subconjunto de comandos SQL
+    DDL - Data Definition Language - Linguagem e Defnição de dados
+    Conjunto de comandos que trabalham a estrutura de uma tabelas
+    
+    Comando alter table:
+        alter table nome_da_tabela
+
+ALTER TABLE - COLUNAS
+    
+    ADD - ADICIONA UMA COLUNA 
+
+        alter table nome_da_tabela add nome_da_coluna tipo_de_dados tamanho;
+
+        ou
+
+        alter table nome_da_tabela add nome_da_coluna tipo_de_dados tamanho restrição;
+
+            exemplo : alter table cliente add cep char(9) not null;
+
+    DROP - EXCLUI UMA COLUNA
+
+        alter table drop column nome_da_coluna
+
+            exemplo: alter table cliente drop column email;
+
+    MODIFY - ALTERA (MODIFICA) UMA COLUNA
+
+        alter table nome_da_tabela modify column nome_da_coluna tipo_de_dados tamanho restrição;
+
+            exemplo: alter table cliente MODIFY COLUMN nome varchar(50) not null;
+
+    RENOMEAR:
+
+        alter table nome_da_tabela rename column nome_da_coluna to novo_nome_da_coluna;
+
+            exemplo:  alter table cliente rename column nome to nomes;
+    
+
+ALTER TABLE - CONSTRAINTS
+
+    ADD CONSTRAINTS - ADICIONA UMA RESTRIÇÃO 
+
+        alter table nome_da_tabela add constraint nome_da_constranit tipo_da_constraint (nome_da_coluna);
+
+            exemplo: alter table cliente add cpf varchar(14)
+                     alter table cliente add CONSTRAINT cpf_uniq unique(cpf)
+    
+    DROP CONSTRAINT - EXCLUI UMA RESTRIÇÃO
+
+        alter table nome_da_tabela drop CONSTRAINT nome_da_constranit;
+
+            exemplo: alter table cliente drop CONSTRAINT cpf_uniq;
+    
+RENOMEAR TABELA
+    
+    ALTER TABLE RENAME TABLE 
+
+        alter ta nome_da_tabela rename to novo_nome_da_tabela;
+
+            exemplo: alter table cliente rename to clientes;
+
+    RENAME TABLE
+
+        rename table nome_da_tabela to novo_nome_da_tabela
+
+            exemplo: rename table clientes to clientess;
+
+DROP TABLE - EXCLUSÃO DE UMA TABELA
+
+    DROP TABLE 
+
+        drop table nome_da_tabela
+        ATENÇÃO: cuidado, o comando drop table quando executado apagará a tabela e todos os dados inseridos nela.
+
+            exemplo: drop table clientess;
