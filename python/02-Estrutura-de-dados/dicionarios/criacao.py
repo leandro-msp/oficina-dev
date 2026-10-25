@@ -23,7 +23,7 @@ A estrutura é beseadas em pares: Uma chave(o identificador, no qual é a refer�
 Se procurar pela chave "nome", será recuperado o valor que está associado a ela: '''
 
 print(usuario["nome"])
-s
+
 print (usuario)
 '''
 RESTRIÇÃO DAS CHAVES (UNICIDADE E IMUTABILIDADE) :
@@ -42,5 +42,18 @@ cores = {
 
 print(cores["cor1"])
 
-# dicionarios internos
+
+# formas de acesso aos dados
+
+'''Acesso direto: Porém pode gerar erro se a chave não existir'''
+nomeCor = cores["cor2"]
+print(nomeCor)
+
+'''Função get -> método seguro que retorna None caso a chave nn exista'''
+nomeCor2 = cores.get("cor3")
+print(nomeCor2)
+
+'''Utilizando o get também é possível atribuir um valor padrão caso a chave nn exista'''
+nomecor3 = cores.get("cor3","Chave não encontrada")
+print(nomecor3)
 
