@@ -42,5 +42,5 @@ cores = {
 
 print(cores["cor1"])
 
-# dicionarios intermps
+# dicionarios internos
 
