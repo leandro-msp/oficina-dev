@@ -12,7 +12,7 @@ dicionario1 = dict()
 usuario = {
     "nome":"Leandro",           
     "idade": 26,
-    "status":"estudante",
+    "status":"estudante"
 }
 
 '''
