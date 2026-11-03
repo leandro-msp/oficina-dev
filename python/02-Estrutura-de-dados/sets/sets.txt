@@ -1,0 +1,28 @@
+Os Conjuntos (Sets) são a evolução direta do que você acabou de aprender sobre a mecânica de Hash. Se um dicionário é um mapeamento de "Chave -> Valor", 
+um conjunto é como se você tivesse apenas as Chaves.
+
+A Teoria: O Dicionário sem Valores
+    Por baixo dos panos, o Python usa exatamente a mesma estrutura de Tabela Hash dos dicionários para gerenciar os Sets. Isso significa que as mesmas regras de ouro se aplicam:
+        
+        Unicidade Absoluta: O conjunto ignora elementos repetidos. Se você tentar adicionar o número 5 dez vezes, ele guardará apenas um.
+
+        Imutabilidade dos Elementos: Como os elementos funcionam como chaves de Hash, você não pode colocar listas ou dicionários dentro de um conjunto 
+        — apenas tipos imutáveis como números, textos e tuplas.
+
+        Ausência de Ordem: Diferente das listas, os conjuntos não têm "posição zero" ou "posição um". 
+        Você não acessa um item por índice, pois a Tabela Hash organiza os dados na memória de forma imprevisível para priorizar a velocidade.
+
+    O maior poder de um conjunto é matemático. 
+    Ele é otimizado para responder quase instantaneamente (O(1)) à pergunta: 
+        "Este elemento já existe aqui dentro?" e para comparar blocos inteiros de dados.
+
+As quatro operações matemáticas fundamentais de conjuntos:
+
+    União:
+        Junta tudo, sem repetir que está nos dois (A|B)
+    Interseção:
+        Quem está em AMBOS os conjuntos (A & B)
+    Diferença:
+        Quem está no A, mas não está no B (A - B)
+    Diferença Simétrica:
+        Quem está em apenas um dos times (exclui os comuns)(A ^ B)
