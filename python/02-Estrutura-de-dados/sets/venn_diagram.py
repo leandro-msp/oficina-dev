@@ -18,4 +18,4 @@ print (f'Diferenca B: {exclusivos_b}') # {'Maria', 'Pedro'}
 
 # 4. Diferença Simétrica (^): Quem está em apenas um dos times (exclui os comuns)?
 diferentes = time_a ^ time_b
-print (f'Difenreca Simetrica {diferentes}') # {'Ana', 'Jo�o', 'Pedro', 'Maria'}
+print (f'Difenreca Simetrica {diferentes}') # {'Ana', 'Joao', 'Pedro', 'Maria'}
